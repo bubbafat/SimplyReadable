@@ -48,10 +48,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id="logo">
+		<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a>
+	</div>
 	
 	<div id="page-wrap">
 
-		<div id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
-		</div>
