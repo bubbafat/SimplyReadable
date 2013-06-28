@@ -11,10 +11,68 @@ License URI: http://opensource.org/licenses/MIT and http://www.gnu.org/licenses/
 
 */
 
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+	#page-wrap { 
+		width: 380px;
+	}
+	
+	img {
+		max-width: 380px;
+	}
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+	#page-wrap { 
+		width: 580px;
+	}
+
+	img {
+		max-width: 580px;
+	}
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+	#page-wrap { 
+		width: 580px;
+	}
+
+	img {
+		max-width: 580px;
+	}
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+	#page-wrap { 
+		width: 380px;
+	}
+
+		img {
+		max-width: 380px;
+	}
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	#page-wrap { 
+		width: 700px;
+	}
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+	#page-wrap { 
+		width: 900px;
+	}
+}
+
 @media screen {
 
 body {
-	color: #333332;
+	color: #333333;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
@@ -32,7 +90,6 @@ body {
 }
 
 #page-wrap { 
-	width: 700px;
 	padding-top: 60px;
 	margin-top: 0;
 	margin: 0 auto;
@@ -54,13 +111,13 @@ body {
 
 .prev-next-nav .prev {
 	float: left;
-    width: 50%;	
+	width: 50%;	
 }
 
 .prev-next-nav .next {
 	float: right;
 	text-align: right;
-    width: 50%;
+	width: 50%;
 }
 
 
@@ -95,6 +152,10 @@ p {
 	font-family: "Open Sans","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	font-size: 22px;	
 	margin: 0 0 10px 0; 
+}
+
+p a {
+	color: #6699FF;
 }
 a { text-decoration: none;}
 a:hover { } 

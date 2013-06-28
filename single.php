@@ -3,8 +3,8 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
 		<ul class="prev-next-nav">
-			<li class="prev"><?php previous_post_link(); ?></li>
-			<li class="next"><?php next_post_link(); ?></li>
+			<li class="prev"><?php previous_post_link('%link', '&laquo; previous'); ?></li>
+			<li class="next"><?php next_post_link('%link', 'next &raquo;'); ?></li>
 		</ul>
 			
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
