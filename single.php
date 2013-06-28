@@ -20,7 +20,7 @@
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
 
 			</div>
-			
+						
 			<?php edit_post_link('Edit this entry','','.'); ?>
 			
 		</div>

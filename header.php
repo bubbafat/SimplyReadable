@@ -48,9 +48,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="logo">
-		<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a>
-	</div>
+	<ul id="top-menu">
+		<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
+		<li><a href="<?php echo bloginfo('url') . '/archive'; ?>">Archive</a></li>
+	</ul>
 	
 	<div id="page-wrap">
 

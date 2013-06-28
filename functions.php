@@ -29,5 +29,12 @@
     		'after_title'   => '</h2>'
     	));
     }
+	
+	function wcount(){
+		ob_start();
+		the_content();
+		$content = ob_get_clean();
+		return sizeof(explode(" ", $content));
+	}
 
 ?>

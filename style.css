@@ -75,6 +75,7 @@ body {
 	color: #333333;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
 
 .screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
@@ -82,11 +83,16 @@ body {
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
 
-#logo {
-	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+#top-menu {
 	font-size: 16px;
 	font-weight: normal;
 	color: gray;
+}
+
+#top-menu li {
+	list-style: none;
+	display: inline;
+	margin-right: 30px;
 }
 
 #page-wrap { 
@@ -97,12 +103,10 @@ body {
 }
 
 .prev-next-nav {
-	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-	font-size: 16px;
 	font-weight: normal;
 	color: gray;
 	padding: 0px;
-	margin: 0px;
+	margin: 0 0 2em 0;
 }
 
 .prev-next-nav li {
@@ -120,21 +124,27 @@ body {
 	width: 50%;
 }
 
+.entry li {
+	font-weight: 400;
+}
+
 
 h1 {
-	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	font-weight: 700;
 }
 
 h2 {
-	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	font-weight: 700;
 	font-size: 52px;
 	line-height: 1;	
+	margin: 0px;
+}
+
+h2 a {
+	color: #333333;
 }
 
 h3 {
-	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	font-weight: 400;
 	font-style: italic;
 	line-height: 1.2;
@@ -142,26 +152,28 @@ h3 {
 }
 
 h4 {
-	font-family: "Source Sans Pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	font-weight: 700;
 	font-size: 28px;
 }
 
 
 p { 
-	font-family: "Open Sans","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-	font-size: 22px;	
 	margin: 0 0 10px 0; 
 }
 
-p a {
+a, a:visited, a:hover, a:active  {
+	color: inherit;
+}
+
+.credit {
+	font-size: 12px;
+}
+
+.entry a, .entry a:visited, .entry a:hover, .entry a:active  {
 	color: #6699FF;
 }
 a { text-decoration: none;}
 a:hover { } 
-a, a:visited, a:hover, a:active {
-  color: inherit;
-}
 
 blockquote { }
 blockquote p { }
@@ -170,12 +182,21 @@ ul, ol { margin: 0 0 10px 0; }
 
 .post { }
 
-.entry { }
+.entry {
+	font-family: "Open Sans","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	font-size: 22px;	
+ }
 .entry a { }
 .entry a:hover { }
 
 pre { }
 code, tt { }
+
+.meta {
+	display: inline;
+	color: #818181;
+}
+
 
 #meta { }
 .postmetadata { }
@@ -262,5 +283,22 @@ caption { background: #fff; margin-bottom: 2em; text-align: left; }
 thead { display: table-header-group; }
 tr { page-break-inside: avoid; } 
 a { text-decoration: none; color: black; }
+
+p a, p a:visited, p a:hover, p a:active  {
+	color: #6699FF;
+}
+a { text-decoration: none;}
+a:hover { } 
+
+.meta {
+	display: inline;
+	color: #818181;
+}
+
+#top-menu {
+	visibility: hidden;
+}
+
+
 	
 } /* END print media */
