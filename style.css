@@ -156,13 +156,13 @@ body {
 	background-color: #ffffff;
 	padding: 0px;
 	margin: 0 0 2em 0;
+	width: 100%;
+	min-width: 100%;
 }
 
 .prev-next-nav li {
 	list-style: none;
 	overflow: hidden;
-	width: 100%;
-	min-width: 100%;
 }
 
 .prev-next-nav .prev {
