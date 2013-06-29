@@ -34,8 +34,8 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 		
@@ -48,10 +48,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<ul id="top-menu">
-		<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
-		<li><a href="<?php echo bloginfo('url') . '/archive'; ?>">Archive</a></li>
-	</ul>
+	<div class="nav-menu">
+		<ul id="top-menu">
+			<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
+			<li><a href="<?php echo bloginfo('url') . '/archive'; ?>">Archive</a></li>
+		</ul>
+	</div>
+
 	
 	<div id="page-wrap">
 
