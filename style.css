@@ -155,14 +155,14 @@ body {
 	color: #818181;
 	background-color: #ffffff;
 	padding: 0px;
-	margin: 0 0 2em 0;
+	margin: 0 0 1px 0;
 	width: 100%;
 	min-width: 100%;
+	overflow: hidden;
 }
 
 .prev-next-nav li {
 	list-style: none;
-	overflow: hidden;
 }
 
 .prev-next-nav .prev {
