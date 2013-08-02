@@ -8,9 +8,9 @@
 			<div class="author-bio">Husband, father, geek, brewer of hoppy beers.  Robert lives near Raleigh, North Carolina with his wife and 4 kids.</div>
 			<div class="author-social">
 				<ul>
-					<li><a href="http://facebook.com/bubbafat"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook_circle_gray32x32.png" width="32" height="32" alt="Facebook"></a></li>
-					<li><a href="https://plus.google.com/103284595660871553241/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/google_circle_gray32x32.png" width="32" height="32" alt="Google+"></a></li>
-					<li><a href="http://twitter.com/bubbafat"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter_circle_gray32x32.png" width="32" height="32" alt="Twitter"></a></li>
+					<li><a href="http://facebook.com/bubbafat"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook_circle_gray32x32.png" width="32" height="32" alt="Facebook"/></a></li>
+					<li><a href="https://plus.google.com/103284595660871553241/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/google_circle_gray32x32.png" width="32" height="32" alt="Google+"/></a></li>
+					<li><a href="http://twitter.com/bubbafat"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter_circle_gray32x32.png" width="32" height="32" alt="Twitter"/></a></li>
 				</ul>
 			</div>
 		</div>
@@ -19,7 +19,9 @@
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				<div class="post_title">
+					<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+				</div>
 
 				<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 

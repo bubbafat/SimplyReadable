@@ -34,8 +34,8 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'/>
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 		
@@ -57,4 +57,5 @@
 
 	
 	<div id="page-wrap">
+		<div class="group">
 
